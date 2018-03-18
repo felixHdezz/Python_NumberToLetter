@@ -1,6 +1,7 @@
 list_Unidades= ['"',('Un','Uno'),'Dos','Tres','Cuatro','Cinco','Seis','Siete','Ocho','Nueve']; list_de_diez =['',('Diez','Once','Doce','Trece','Catorce','Quince','Dieciseis','Diecisiete','Dieciocho','Diecinueve'),('Veinte','Venti'),('Treinta','Treinta y'),('Cuarenta','Cuarenta y'),('Cincuenta','Cincuenta y'),('Sesente','Sesenta y'),('Setenta','Setenta y'),('Ochenta','Ochenta y'),('Noventa','Noventa y')];
 list_de_cien = ["",('Cien','Ciento'),'Doscientos','Trecientos','Cuatrocientos','Quinientos','Seiscientos','Sieteciento','Ochocientos','Novecientos'];
 list_miles = [("",""),('Mil','Mil'),('Millon','Millones'),('Billon','Billones')];
+
 def numero_a_letras(num):
     num_entero = int(num)
     numero_letras = ""
@@ -26,6 +27,7 @@ def numero_a_letras(num):
         num_entero = int(num_entero / 1000)
     numero_letras = numero_letras.strip()
     print(numero_letras)
+
 def convert_num_at_let(num, val):
     txt_cien = ""
     txt_des = ""
@@ -52,6 +54,8 @@ def convert_num_at_let(num, val):
         if(unoAnueve == 1):
             txt_unidades = txt_unidades[val]
     return "%s %s %s" %(txt_cien,txt_des,txt_unidades)
-##########ingresa un numero intero
+
+## Permmite que el usuario ingresé un numero intero
+## Obtiene el valor 
 num = int(raw_input("Ingrese un numero entero: "))
 numero_a_letras(num)
