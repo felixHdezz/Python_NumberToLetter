@@ -55,7 +55,7 @@ def convert_num_at_let(num, val):
             txt_unidades = txt_unidades[val]
     return "%s %s %s" %(txt_cien,txt_des,txt_unidades)
 
-## Permmite que el usuario ingresé un numero intero
+## Permmite que el usuario ingresé un numero entero
 ## Obtiene el valor 
 num = int(raw_input("Ingrese un numero entero: "))
 numero_a_letras(num)
